@@ -43,7 +43,7 @@ describe('LoginInput Componenent', () => {
     // Arrange
     const mockLogin = jest.fn();
     render(<LoginInput login={mockLogin} />);
-    const usernameInput = await screen.getByPlaceholderText('Username');
+    const usernameInput = await screen.getByPlaceholderText('Usernadme');
     await userEvent.type(usernameInput, 'usernametest');
     const passwordInput = await screen.getByPlaceholderText('Password');
     await userEvent.type(passwordInput, 'passwordtest');
